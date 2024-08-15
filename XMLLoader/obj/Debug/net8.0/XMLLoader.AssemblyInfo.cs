@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XMLLoader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68acfe5ce9b454369cbac0d8f64d6dbf841fb9be")]
 [assembly: System.Reflection.AssemblyProductAttribute("XMLLoader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XMLLoader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

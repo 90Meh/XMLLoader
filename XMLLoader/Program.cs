@@ -1,7 +1,9 @@
 ﻿using System;
-using System.Xml.Linq;
+using System.Collections.Generic;
 using System.Data.Entity;
-
+using System.IO;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace XMLLoader
 {
@@ -12,55 +14,85 @@ namespace XMLLoader
         {
             string xmlFilePath = @"C:\temp\purchases.xml"; // Путь к вашему XML файлу
 
-            try
+            LoadOrdersFromXml(xmlFilePath);
+
+        }
+
+        static void LoadOrdersFromXml(string xmlFilePath)
+        {
+            if (!File.Exists(xmlFilePath))
             {
-                // Загрузка XML файла
-                XDocument xdoc = XDocument.Load(xmlFilePath);
+                Console.WriteLine("File not found.");
+                return;
+            }
 
-                // Парсинг XML в объекты классов
-                List<Order> orders = xdoc.Descendants("order")
-                    .Select(o => new Order
-                    {
-                        No = int.Parse(o.Element("no").Value),
-                        RegDate = DateTime.Parse(o.Element("reg_date").Value),
-                        Sum = double.Parse(o.Element("sum").Value),
-                        Products = o.Descendants("product")
-                            .Select(p => new Product
-                            {
-                                Quantity = int.Parse(p.Element("quantity").Value),
-                                Name = p.Element("name").Value,
-                                Price = double.Parse(p.Element("price").Value)
-                            }).ToList(),
-                        User = new User
+            XDocument xdoc = XDocument.Load(xmlFilePath);
+            List<Order> orders = xdoc.Descendants("order")
+                .Select(o => new Order
+                {
+                    No = int.Parse(o.Element("no").Value),
+                    RegDate = DateTime.Parse(o.Element("reg_date").Value),
+                    Sum = double.Parse(o.Element("sum").Value),
+                    Products = o.Descendants("product")
+                        .Select(p => new Product
                         {
-                            Name = o.Element("user").Element("fio").Value,
-                            Email = o.Element("user").Element("email").Value
-                        }
-                    }).ToList();
+                            Name = p.Element("name").Value,
+                            Price = double.Parse(p.Element("price").Value)
+                        }).ToList(),
+                    User = new User
+                    {
+                        Name = o.Element("user").Element("fio").Value,
+                        Email = o.Element("user").Element("email").Value
+                    }
+                }).ToList();
 
-                // Вывод информации в консоль
+            using (var context = new AppDbContext())
+            {
                 foreach (var order in orders)
                 {
-                    Console.WriteLine($"Order No: {order.No}");
-                    Console.WriteLine($"Registration Date: {order.RegDate}");
-                    Console.WriteLine($"Sum: {order.Sum}");
-                    Console.WriteLine("Products:");
+                    var user = context.Users.FirstOrDefault(u => u.Email == order.User.Email);
+                    if (user == null)
+                    {
+                        context.Users.Add(order.User);
+                        context.SaveChanges();
+                        user = order.User;
+                    }
+
+                    var purchase = new Purchase
+                    {
+                        UserId = user.UserId,
+                        PurchaseDate = order.RegDate,
+                        Sum = order.Sum
+                    };
+                    context.Purchases.Add(purchase);
+                    context.SaveChanges();
+
                     foreach (var product in order.Products)
                     {
-                        Console.WriteLine($"  Name: {product.Name}, Quantity: {product.Quantity}, Price: {product.Price}");
+                        var existingProduct = context.Products.FirstOrDefault(p => p.Name == product.Name);
+                        if (existingProduct == null)
+                        {
+                            context.Products.Add(product);
+                            context.SaveChanges();
+                            existingProduct = product;
+                        }
+
+                        var purchaseDetail = new PurchaseDetails
+                        {
+                            PurchaseId = purchase.PurchaseId,
+                            ProductId = existingProduct.ProductId,
+                            Quantity = order.Products.First(p => p.Name == product.Name).Quantity
+                        };
+                        context.PurchaseDetails.Add(purchaseDetail);
                     }
-                    Console.WriteLine($"User: {order.User.Name}, Email: {order.User.Email}");
-                    Console.WriteLine();
+                    context.SaveChanges();
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка при чтении XML файла: {ex.Message}");
             }
         }
     }
-
 }
+
+
 
 
 

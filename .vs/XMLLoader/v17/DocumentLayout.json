@@ -7,11 +7,20 @@
       "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\purchases.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\purchasedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\purchasedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,12 +31,7 @@
       "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\purchasedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\purchasedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|solutionrelative:xmlloader\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\purchases.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F7E8CAD-51A9-4CBB-B475-7833504898D3}|XMLLoader\\XMLLoader.csproj|c:\\users\\meh\\source\\repos\\xmlloader\\xmlloader\\xmlloader.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -41,21 +45,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "XMLLoader",
-              "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\XMLLoader.csproj",
-              "RelativeDocumentMoniker": "XMLLoader\\XMLLoader.csproj",
-              "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\XMLLoader.csproj",
-              "RelativeToolTip": "XMLLoader\\XMLLoader.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-15T05:23:06.534Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -87,6 +78,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "XMLLoader\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\AppDbContext.cs",
+              "RelativeToolTip": "XMLLoader\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T08:02:00.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "XMLLoader.csproj",
+              "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\XMLLoader.csproj",
+              "RelativeDocumentMoniker": "XMLLoader\\XMLLoader.csproj",
+              "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\XMLLoader.csproj",
+              "RelativeToolTip": "XMLLoader\\XMLLoader.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-15T05:23:06.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "purchases.xml",
               "DocumentMoniker": "C:\\temp\\purchases.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\temp\\purchases.xml",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\Order.cs",
               "RelativeDocumentMoniker": "XMLLoader\\Order.cs",
@@ -112,33 +129,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "PurchaseDetails.cs",
               "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\PurchaseDetails.cs",
               "RelativeDocumentMoniker": "XMLLoader\\PurchaseDetails.cs",
               "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\PurchaseDetails.cs",
               "RelativeToolTip": "XMLLoader\\PurchaseDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T07:42:42.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Purchase.cs",
               "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\Purchase.cs",
               "RelativeDocumentMoniker": "XMLLoader\\Purchase.cs",
               "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\Purchase.cs",
               "RelativeToolTip": "XMLLoader\\Purchase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T07:39:53.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\Product.cs",
               "RelativeDocumentMoniker": "XMLLoader\\Product.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\User.cs",
               "RelativeDocumentMoniker": "XMLLoader\\User.cs",
@@ -170,7 +187,7 @@
               "RelativeDocumentMoniker": "XMLLoader\\Program.cs",
               "ToolTip": "C:\\Users\\meh\\source\\repos\\XMLLoader\\XMLLoader\\Program.cs",
               "RelativeToolTip": "XMLLoader\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAIAAAAZAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwC4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T02:05:56.07Z",
               "EditorCaption": ""

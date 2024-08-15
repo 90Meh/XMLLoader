@@ -8,8 +8,10 @@ namespace XMLLoader
 {
     internal class Purchase
     {
-        public int PurschaseId { get; set; }
+        public int PurchaseId { get; set; }
         public int UserId { get; set; }
-        public DateTime PurschaseDate { get; set; }
+        public DateTime PurchaseDate { get; set; }
+        public double Sum {  get; set; }
+        
     }
 }
