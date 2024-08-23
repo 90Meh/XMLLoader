@@ -12,7 +12,7 @@ namespace XMLLoader
 
         static void Main()
         {
-            string xmlFilePath = @"C:\temp\purchases.xml"; // Путь к вашему XML файлу
+            string xmlFilePath = @"C:\temp\purchases.xml";
 
             LoadOrdersFromXml(xmlFilePath);
 
